@@ -67,7 +67,8 @@ async function run() {
       })
 
       //delete
-
+    //   http://localhost:5000/task/62bddc50a456c6bd8ac58e51
+    
       app.delete('/task/:id',async(req,res)=>{
         const id = req.params.id;
         const filter = {_id:ObjectId(id)};
